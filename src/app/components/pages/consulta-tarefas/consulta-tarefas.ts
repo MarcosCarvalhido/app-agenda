@@ -12,7 +12,8 @@ export class ConsultaTarefas {
   ngOnInit(){
     this.tarefaService.obterTarefas()
     .subscribe((tarefas)=> {
-      console.table(tarefas);
+      
+      
     })
   }
 }
