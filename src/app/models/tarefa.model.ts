@@ -10,7 +10,7 @@ export interface Tarefa {
     hora: string; // Hora de criação ou prazo da tarefa
     categoria: string; // Categoria ou tipo da tarefa
     prioridade: string; // Prioridade da tarefa (ex: alta, média, baixa)
-    finalizada: boolean; // Indica se a tarefa foi concluída ou não
+    finalizado: boolean; // Indica se a tarefa foi concluída ou não
     comentarios: string; // Comentário ou descrição adicional da tarefa
 
 }

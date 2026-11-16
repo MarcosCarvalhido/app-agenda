@@ -1,1 +1,36 @@
-<p>consulta-tarefas works!</p>
+<div class="text-primary">Consulta de Tarefas</div>
+<div class="table" table-sm table-hover>
+    <thead>
+        <th>Nome</th>
+        <th>Data</th>
+        <th>hora</th>
+        <th>Categorias</th>
+        <th>Prioridade</th>
+        <th>Comentario</th>
+        <th></th>
+    </thead>
+    <tbody>
+        @for (item of tarefas(); track item.id) {
+            <tr>
+                <td>{{ item.nome }}</td>
+                <td>{{ item.data }}</td>
+                <td>{{ item.hora }}</td>
+                <td>{{ item.categoria }}</td>
+                <td>{{ item.prioridade }}</td>
+                <td>{{ item.finalizado }}</td>
+                <td>{{ item.comentarios }}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary me-1">Editar</button>
+                    <button class="btn btn-sm btn-outline-danger">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <td colspan="8">
+            <p>
+                Quantidade de Tarefas: {{tarefas().length}}
+            </p>
+        </td>
+    </tfoot>
+</div>

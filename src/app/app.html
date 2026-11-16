@@ -1,8 +1,14 @@
 <main>
-  <div class="container-fluid">
-  <app-navbar/>
+<app-navbar/> 
+
+<div class="container mt-3">
+  <div class="card shadow">
+    <div class="card-body">
+      
+      <!-- Local para renderizar os componentes conforme a rota -->
+      <router-outlet/>
+
+    </div>
   </div>
-  <div class="container">
-<router-outlet/>
-  </div>
+</div>
 </main>
