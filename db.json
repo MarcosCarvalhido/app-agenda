@@ -7,7 +7,7 @@
       "hora": "07:00",
       "categoria": "Estudos",
       "prioridade": "Alta",
-      "finalizado": false,
+      "finalizado": "true",
       "comentarios": "Estudar integração do Angular com o backend"
     },
     {
@@ -24,11 +24,11 @@
       "id": "iT5gyZDqL_4",
       "nome": "Nova Tarefa",
       "data": "2026-11-23",
-      "hora": "12:12",
+      "hora": "12:15",
       "categoria": "Trabalho",
-      "prioridade": "Alta",
-      "finalizado": false,
-      "comentarios": "AAAA"
+      "prioridade": "Média",
+      "finalizado": "false",
+      "comentarios": "Algo importante"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

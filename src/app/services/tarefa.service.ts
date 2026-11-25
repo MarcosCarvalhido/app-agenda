@@ -27,6 +27,12 @@ export class TarefaService {
         return this.http.get<Tarefa[]>(`${this.apiUrl}/tarefas`, { params });
     }
 
+    //Função para obter 1 tarefa através do ID
+    obterTarefaPorId(id: string): Observable<Tarefa> {
+        //Fazendo uma chamada GET na API passando o ID da tarefa
+        return this.http.get<Tarefa>(`${this.apiUrl}/tarefas/${id}`);
+    }
+
     //Função para cadastrar uma tarefa na API
     incluirTarefa(tarefa: Tarefa): Observable<Tarefa> {
         //Fazendo uma chamada POST para a API para incluir uma tarefa
